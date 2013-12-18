@@ -181,7 +181,7 @@ do
       shift
     ;;
 
-    update|show|search|find|describe|packageof|install|remove)
+    update|show|list|search|find|describe|info|packageof|install|remove)
       if test "-$command-" = "--"
       then
         command=$1
@@ -224,7 +224,7 @@ case "$command" in
   ;;
 
 
-  show)
+  show|list)
 
     echo 1>&2 The following packages are installed:
     cat /etc/setup/installed.db | awk '/[^ ]+ [^ ]+ 0/ {print $1}'
@@ -252,7 +252,7 @@ case "$command" in
   ;;
 
 
-  describe)
+  describe|info)
 
     checkpackages
     findworkspace
