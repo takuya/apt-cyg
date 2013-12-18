@@ -46,3 +46,14 @@ Contributing
 This project has been cloned from original to make contributing easier. Feel free to fork and modify this script.
 
 The [Google Code project](https://code.google.com/p/apt-cyg/) has a list of open issues.
+
+
+TroubleShooting
+-------------
+
+If apt-cyg fail to install or mal install database, remove package entry from install.db
+
+     /etc/setup/install.db
+  
+
+
