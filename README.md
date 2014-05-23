@@ -12,6 +12,12 @@ apt-cyg is a simple script. Once you have a copy, make it executable:
 
 Optionally place apt-cyg in a bin/ folder on your path.
 
+
+First of all Update package repository 
+   
+   # apt-cyg -m  http://ftp.jaist.ac.jp/pub/cygwin/x86_64/ #x86_64
+   # apt-cyg -m  http://ftp.jaist.ac.jp/pub/cygwin/x86/ #x86
+
 Then use apt-cyg, for example:
 
     # apt-cyg install nano
